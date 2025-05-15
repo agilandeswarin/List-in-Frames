@@ -1,0 +1,45 @@
+LinkedList : It is easy for Insertion and Deletion 
+
+PROGRAM
+package List;
+import java.util.*;
+public class Link {
+
+	public static void main(String[] args) {
+		LinkedList <String> link=new LinkedList<>();
+		link.add("JAVASCRIPT");
+		link.add("CSS");
+		link.add("HTML");
+		link.add("REACT js");
+		link.add("NODE js");
+		
+		System.out.println("The LinkedList:"+link);
+		System.out.println("\t");
+		link.add("MONGO DB");
+		link.remove("HTML");
+		
+		System.out.println("Updated LinkedList :"+link);
+		System.out.println("\t");
+
+		String str=link.get(4);
+		System.out.println("Get the LinkedList :"+str);
+		System.out.println("\t");
+
+		link.removeLast();
+		System.out.println("Remove last :"+link);
+		System.out.println("\t");
+
+		link.removeFirst();
+		System.out.println("Remove First :"+link);
+		System.out.println("\t");
+
+		link.removeFirstOccurrence("CSS");
+		System.out.println("Remove first occurence :"+link);
+		System.out.println("\t");
+
+		link.removeLastOccurrence("NODE js");
+		System.out.println("Remove last occurence:"+link);
+		
+	}
+
+}
