@@ -1,0 +1,66 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArraywithNumbers {
+
+	public static void main(String[] args) {
+		List list1=new ArrayList();
+		list1.add("JAVA");
+		list1.add("PYTHON");
+		list1.add("C++");
+		list1.add("C");
+		list1.add("C#");
+		list1.add(true);
+		list1.add(false);
+		list1.add(160.4f);
+		list1.add(45);
+		
+         list1.set(4,"AI" );
+         list1.add(5,"Languages");
+         
+         list1.remove(8);
+         System.out.println("All the item should be"+list1);
+	
+
+	int a[]= {2,12,33,10,33,55,47,7,26,69,70,89,90,7,55};
+	for(int i=a.length-1;i>=0;i--) {
+		System.out.println("The Array list :"+a[i]);
+		
+		
+	}
+	System.out.println("....................................");
+         for(int j:a)
+         {
+        	 System.out.println("After the Array list :"+j);
+         }
+         System.out.println("....................................");
+         for(Object obj:list1)
+         {
+        	 System.out.println("The List of the object :"+obj);
+    
+         }
+         System.out.println("....................................");
+         ArrayList<Integer> AL=new ArrayList<>();
+         AL.add(100);
+         AL.add(200);
+         AL.add(300);
+         AL.add(400);
+         AL.add(500);
+         AL.add(600);
+         AL.add(700);
+         AL.add(800);
+         AL.add(900);
+         
+         System.out.println("The Array integer : "+AL);
+         System.out.println("....................................");
+         ArrayList<Integer> AL2=new ArrayList<>();
+         for(int i=0;i<a.length;i++) {
+        	 AL2.add(a[i]);
+         }
+         System.out.println("The New Array List :"+AL2);
+	}
+	
+	
+
+}
+
