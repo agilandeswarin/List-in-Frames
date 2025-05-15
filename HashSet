@@ -1,0 +1,53 @@
+Hashset : It avoids the Duplication and it is not in order formats.
+
+PROGRAM
+package List;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+public class Hashset {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> AL=new ArrayList<>();
+        AL.add(100);
+        AL.add(200);
+        AL.add(300);
+        AL.add(400);
+        AL.add(500);
+        AL.add(600);
+        AL.add(700);
+        AL.add(800);
+        AL.add(900);
+        
+        System.out.println("The Array integer : "+AL);
+        System.out.println("\t");
+        
+		HashSet <Integer>h1=new HashSet<>();
+		h1.add(20);
+		h1.add(40);
+		h1.add(20);
+		h1.add(50);
+		h1.add(60);
+		h1.add(40);
+		h1.add(30);
+		h1.add(80);
+		h1.add(90);
+System.out.println("Hashset list:"+h1);
+System.out.println("\t");
+HashSet <Integer>h2=new HashSet<>(AL);
+
+System.out.println("The new HashSet :"+h2);
+System.out.println("\t");
+HashSet <Integer>h3=new HashSet<>();
+
+System.out.println(AL);
+System.out.println("\t");
+
+for(Integer k:AL) {
+	
+	System.out.println("Numbers :"+k);
+}
+	}
+
+}
+
