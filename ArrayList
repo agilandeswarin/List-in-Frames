@@ -1,0 +1,29 @@
+ArrayList : It is used for searching hard for insertion and deletion.
+
+PROGRAM
+package List;
+import java.util.ArrayList;
+import java.util.List;
+public class Arraylist {
+
+	public static void main(String[] args) {
+		List list1=new ArrayList();
+		list1.add("JAVA");
+		list1.add("PYTHON");
+		list1.add("C++");
+		list1.add("C");
+		list1.add("C#");
+		list1.add(true);
+		list1.add(false);
+		list1.add(160.4f);
+		list1.add(45);
+		
+         list1.set(4,"AI" );
+         list1.add(5,"Languages");
+         
+         list1.remove(8);
+         System.out.println("All the item should be"+list1);
+	}
+
+}
+
